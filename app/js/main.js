@@ -83,11 +83,14 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 function SharesTemplate(x) {
+	var data = _.random(0, 1000);
 
-	return "\n\t<h3>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : \n\t<span>" + x.totalShares + "</span></p></li>\n\t";
+	return "\n\t<h3>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : \n\t<span>" + x.totalShares + "</span></p>\n\t</li>";
 }
 
 exports["default"] = SharesTemplate;
+
+//<p>Value : data </p>
 module.exports = exports["default"];
 
 },{}],3:[function(require,module,exports){
