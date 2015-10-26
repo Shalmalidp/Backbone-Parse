@@ -2021,4 +2021,29 @@
 body {
   background: #e2ebf3; }
 
+h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 6em;
+  margin-bottom: 0; }
+
+h6 {
+  float: right;
+  padding-right: 20px;
+  font-style: Italic; }
+
+#share {
+  color: red; }
+
+li {
+  list-style: none;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  font-style: italic;
+  font-size: 25px; }
+
+span {
+  color: green; }
+
 /*# sourceMappingURL=main.css.map */

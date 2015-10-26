@@ -37,15 +37,17 @@ let $div = $('<div></div>');
 shareHolders.each(function(holder){
 //grab raw data from holder model 
 // let data = holder.toJSON(); dont need to use if you are manipulating data just do it with attributes.
+let data = holder.toJSON();
 let x = holder.attributes.EndShareNo - holder.attributes.StartShareNo;
+console.log(data);
 holder.set({'totalShares': x });
 holder.save();
 
-let template = ShareTemplate(x);
+let template = ShareTemplate(data);
 let $li = $(template);
 $div.append($li);
 });
-	$('body').html($div);
+	$('body').append($div);
 };
 
 shareHolders.fetch().then(DisplayData);

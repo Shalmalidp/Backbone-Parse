@@ -59,15 +59,17 @@ function DisplayData() {
 	shareHolders.each(function (holder) {
 		//grab raw data from holder model
 		// let data = holder.toJSON(); dont need to use if you are manipulating data just do it with attributes.
+		var data = holder.toJSON();
 		var x = holder.attributes.EndShareNo - holder.attributes.StartShareNo;
+		console.log(data);
 		holder.set({ 'totalShares': x });
 		holder.save();
 
-		var template = (0, _shareTemplate2['default'])(x);
+		var template = (0, _shareTemplate2['default'])(data);
 		var $li = (0, _jquery2['default'])(template);
 		$div.append($li);
 	});
-	(0, _jquery2['default'])('body').html($div);
+	(0, _jquery2['default'])('body').append($div);
 };
 
 shareHolders.fetch().then(DisplayData);
@@ -82,7 +84,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 function SharesTemplate(x) {
 
-	return "\n\t<li> " + x.Fname + " has Shares Nos " + x.StartShareNo + " to " + x.EndShareNo + " and a total of \n\t" + x.totalShares + "</li>";
+	return "\n\t<h3>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : \n\t<span>" + x.totalShares + "</span></p></li>\n\t";
 }
 
 exports["default"] = SharesTemplate;
