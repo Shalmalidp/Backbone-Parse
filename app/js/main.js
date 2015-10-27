@@ -77,20 +77,20 @@ shareHolders.fetch().then(DisplayData);
 console.log('Hello, World');
 
 },{"./shareTemplate":2,"./share_collection":3,"./share_model":4,"backbone":5,"jquery":6,"moment":7,"underscore":8}],2:[function(require,module,exports){
+// var data = _.random(0,1000);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 function SharesTemplate(x) {
-	var data = _.random(0, 1000);
 
-	return "\n\t<h3>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : \n\t<span>" + x.totalShares + "</span></p>\n\t</li>";
+	return "\n\t<div>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : <span>" + x.totalShares + "</span></p>\n\t<hr>\n\t</li>\n\t</div>";
 }
 
 exports["default"] = SharesTemplate;
 
-//<p>Value : data </p>
+// <p> Share Value :${_.random(0,100)} </p>
 module.exports = exports["default"];
 
 },{}],3:[function(require,module,exports){

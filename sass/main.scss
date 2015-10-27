@@ -1,19 +1,44 @@
 @import "bourbon";
 @import "font-awesome";
 
+$color : blue;
+
 body {
   background: #e2ebf3;
 
 }
-
-div{
+h1{
+	display:inline-block;
+	color:blue;
+	font-size : 4em;
+}
+.data{
 	margin-bottom :35px;
 	border-bottom : 1px solid Black;
 }
-h3{	margin-top :20px; 	
-	text-align : center;
-	font-size:6em;
+
+h3{	
+	padding-left: 7	0px;
+	vertical-align:top;
+	display: inline-block;
+	margin-top :20px; 	
+	vertical-align : middle;
+	font-size:7em;
 	margin-bottom :0;
+}
+
+#bull{
+	//background: url('./images/noun_22237_cc.png') no-repeat -26px -33px;
+	background-size: 350px 350px;
+	width: 40px;
+	height: 50px;
+}
+
+#bears{
+	//background: url('imgs/noun_56284_cc.png') no-repeat -39px -73px;
+	background-size: 350px 350px;
+	width: 50px;
+	height: 55px;
 }
 
 
@@ -22,7 +47,10 @@ h6{
 	text-align:right;
 	padding-right:20px;
 	font-style : Italic;
-	margin-left : 80%;
+	font-size: 0.9em;
+	margin-left :80%;
+	font-family: 'IM Fell Great Primer', serif;
+	margin-top : 0;
 }
 #share{
 	color: red;
