@@ -74,7 +74,7 @@ function DisplayData() {
 
 shareHolders.fetch().then(DisplayData);
 
-console.log('Hello, World');
+//console.log('Hello, World');
 
 },{"./shareTemplate":2,"./share_collection":3,"./share_model":4,"backbone":5,"jquery":6,"moment":7,"underscore":8}],2:[function(require,module,exports){
 // var data = _.random(0,1000);
@@ -85,7 +85,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 function SharesTemplate(x) {
 
-	return "\n\t<div>\n\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t<p> Total Shares  : <span>" + x.totalShares + "</span></p>\n\t<hr>\n\t</li>\n\t</div>";
+	return "\n\t<div>\n\t\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t\t\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t\t\t<p> Total Shares  : <span>" + x.totalShares + "</span></p>\n\t\t\t<hr>\n\t\t</li>\n\t</div>";
 }
 
 exports["default"] = SharesTemplate;

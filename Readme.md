@@ -1,3 +1,7 @@
-## Welcome to My Repo
+## Welcome To bears & Bulls
 
-> I am your Readme.md file, you should probably update me.
+> this is a Simple Project which helps understand Backbone Collection and Model.
+
+> Using the Parse Database to access data and display it on the webpage.
+
+>the link to my WebPage : http://bearsandbulls-parse-assigment-shalmali.surge.sh/
