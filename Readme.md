@@ -1,6 +1,6 @@
-## Welcome To bears & Bulls
+## Welcome To Bears & Bulls
 
-> this is a Simple Project which helps understand Backbone Collection and Model.
+> This is a Simple Project which helps understand Backbone Collection and Model.
 
 > Using the Parse Database to access data and display it on the webpage.
 
