@@ -2057,20 +2057,42 @@ h6 {
   font-size: 0.9em;
   margin-left: 80%;
   font-family: 'IM Fell Great Primer', serif;
-  margin-top: 0; }
+  margin-top: 0;
+  color: #00458E; }
 
 #share {
   color: red; }
 
+.holder {
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 90%;
+  margin: 5px 50px; }
+
 li {
+  margin: 0 auto;
+  display: inline-block;
+  width: 70%;
   list-style: none;
-  padding-left: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0 10px 15px;
   text-align: left;
   font-style: italic;
-  font-size: 25px; }
+  font-size: 15px; }
+
+button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+  background: #00458E;
+  color: Orange;
+  border: none;
+  border-radius: 5px;
+  shadow: none; }
 
 span {
-  color: #00458E; }
+  color: #00458E;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

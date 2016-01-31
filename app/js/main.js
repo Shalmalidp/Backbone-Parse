@@ -70,6 +70,9 @@ function DisplayData() {
 		$div.append($li);
 	});
 	(0, _jquery2['default'])('body').append($div);
+	(0, _jquery2['default'])('button').click(function () {
+		alert("You have opted to sell your Shares!!! Have a Good Day!!!");
+	});
 };
 
 shareHolders.fetch().then(DisplayData);
@@ -85,7 +88,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 function SharesTemplate(x) {
 
-	return "\n\t<div>\n\t\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t\t\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t\t\t<p> Total Shares  : <span>" + x.totalShares + "</span></p>\n\t\t\t<hr>\n\t\t</li>\n\t</div>";
+	return "\n\t<div class=\"holder\">\n\t\t<li> Share Holder Name : <span>" + x.Fname + " " + x.Lname + "</span>\n\t\t\t<p> Share Numbers : <span> " + x.StartShareNo + "</span> to <span>" + x.EndShareNo + "</span></p>\n\t\t\t<p> Total Shares  : <span>" + x.totalShares + "</span></p>\n\t\t</li>\n\t\t<button> Transfer Shares </button>\n\t</div>";
 }
 
 exports["default"] = SharesTemplate;

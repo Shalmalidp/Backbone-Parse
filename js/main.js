@@ -48,6 +48,9 @@ let $li = $(template);
 $div.append($li);
 });
 	$('body').append($div);
+  $('button').click(function(){
+    alert("You have opted to sell your Shares!!! Have a Good Day!!!")
+  })
 };
 
 shareHolders.fetch().then(DisplayData);
