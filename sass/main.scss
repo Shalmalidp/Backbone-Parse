@@ -51,7 +51,8 @@ h6{
 	margin-left :80%;
 	font-family: 'IM Fell Great Primer', serif;
 	margin-top : 0;
-	color:#00458E;
+	// color:#00458E;
+	color :red;
 }
 #share{
 	color: red;
@@ -59,7 +60,7 @@ h6{
 
 .holder{
 	display: inline-block;
-	border :2px solid red;
+	border :2px solid #00458E;
 	border-radius : 5px;
 	width : 90%;
 	margin: 5px 50px;
@@ -83,7 +84,7 @@ button{
 	padding : 10px 15px;
 	margin-bottom : 50px;
 	background:#00458E;
-	color : Orange;
+	color : orange;
 	border: none;
 	border-radius : 5px ;
 	shadow : none;
@@ -91,6 +92,6 @@ button{
 
 
 span{
-	color:#00458E;
+	color:Red;
 	font-weight: bold;
 }

@@ -61,11 +61,13 @@ function DisplayData() {
 		// let data = holder.toJSON(); dont need to use if you are manipulating data just do it with attributes.
 		var data = holder.toJSON();
 		var x = holder.attributes.EndShareNo - holder.attributes.StartShareNo;
+
 		console.log(data);
+
 		holder.set({ 'totalShares': x });
 		holder.save();
 
-		var template = (0, _shareTemplate2['default'])(data);
+		var template = (0, _shareTemplate2['default'])(data).toUpperCase();
 		var $li = (0, _jquery2['default'])(template);
 		$div.append($li);
 	});
