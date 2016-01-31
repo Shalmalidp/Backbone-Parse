@@ -67,7 +67,7 @@ function DisplayData() {
 		holder.set({ 'totalShares': x });
 		holder.save();
 
-		var template = (0, _shareTemplate2['default'])(data).toUpperCase();
+		var template = (0, _shareTemplate2['default'])(data);
 		var $li = (0, _jquery2['default'])(template);
 		$div.append($li);
 	});

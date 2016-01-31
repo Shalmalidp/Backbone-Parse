@@ -45,7 +45,7 @@ console.log(data);
 holder.set({'totalShares': x });
 holder.save();
 
-let template = ShareTemplate(data).toUpperCase();
+let template = ShareTemplate(data);
 let $li = $(template);
 $div.append($li);
 });
